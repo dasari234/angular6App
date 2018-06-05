@@ -1,0 +1,326 @@
+<!-- Slide Menu-->
+<aside class="side-menu__container" [ngClass]="{'side-menu__container-active': showMenu}" (click)="toggleMenu()">
+	<nav class="slide-menu" [ngClass]="{'slide-menu-active': showMenu}" (click)="$event.stopImmediatePropagation();">
+		<section class="menu-header">
+			<span class="greeting__text">Welcome Back</span>
+			<div class="profile-image__container">
+				<img src="" alt="profile-image" class="profile__image">
+			</div>
+			<div class="account-details">
+				<span class="name__text">Srinivasa</span>
+				<span class="email__text">dasari9@gmail.com</span>
+			</div>
+		</section>
+		<section class="menu-body">
+
+		</section>
+		<section class="menu-footer">
+
+		</section>
+	</nav>
+</aside>
+
+
+<header id="fwt-masthead" data-owner="ID" class="ready">
+    <div id="fwt-banner">
+        <a id="fwt-logo" href="/c/en/us/index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="108" height="57" viewBox="0 0 108 57" role="img" aria-labelledby="fwt-logo-title">
+                <title id="fwt-logo-title">Cisco.com Worldwide</title>
+                <g fill="#1BA0D7" fill-rule="evenodd">
+                    <path d="M41.69 52.125l-.019 4.308.315.054c.989.185 1.987.313 2.99.385a18.1 18.1 0 0 0 2.642.051c.842-.06 1.675-.218 2.48-.468a6.862 6.862 0 0 0 2.573-1.371 5.19 5.19 0 0 0 1.498-2.148 5.912 5.912 0 0 0-.03-4.324 4.852 4.852 0 0 0-1.343-1.862 5.568 5.568 0 0 0-1.97-1.147l-3.25-1.206a1.742 1.742 0 0 1-.887-.845 1.107 1.107 0 0 1 .036-.986 1.29 1.29 0 0 1 .217-.291 1.75 1.75 0 0 1 .48-.347c.363-.18.755-.293 1.158-.337a6.76 6.76 0 0 1 2.072.022c.81.088 1.613.231 2.402.43l.168.037v-3.974l-.31-.067a21.14 21.14 0 0 0-2.444-.435 12.545 12.545 0 0 0-3.213-.014 6.945 6.945 0 0 0-3.699 1.488 4.908 4.908 0 0 0-1.58 2.178 5.984 5.984 0 0 0-.003 4.05c.242.65.63 1.237 1.136 1.714.437.422.932.78 1.47 1.065.708.38 1.458.675 2.235.878.257.077.512.158.766.243l.385.141.11.045c.38.136.726.35 1.018.628.202.19.358.423.455.683.06.237.061.485.003.723a1.536 1.536 0 0 1-.744.892 3.691 3.691 0 0 1-1.239.387 9 9 0 0 1-1.92.097 21.973 21.973 0 0 1-2.507-.334c-.433-.09-.864-.19-1.291-.303l-.16-.04zM24.026 56.277v-5.002l-.098.043a9.253 9.253 0 0 1-3.605.915 5.303 5.303 0 0 1-3.63-1.07 4.644 4.644 0 0 1-1.58-2.244 5.395 5.395 0 0 1-.106-3 4.6 4.6 0 0 1 1.609-2.566 4.823 4.823 0 0 1 2.528-1.09 8.332 8.332 0 0 1 4.774.895l.108.056v-5.03l-.228-.061a12.78 12.78 0 0 0-4.552-.596 10.534 10.534 0 0 0-4.065.93 9.29 9.29 0 0 0-3.329 2.572 10.014 10.014 0 0 0-.182 12.18 9.546 9.546 0 0 0 5.292 3.403c2.211.538 4.528.456 6.697-.234l.367-.101M30.546 56.607h4.73V37.846h-4.73zM0 22.769a2.348 2.348 0 0 0 3.935 1.545c.434-.403.7-.955.744-1.545v-5.2a2.34 2.34 0 0 0-4.679 0v5.2M12.95 22.769a2.349 2.349 0 0 0 2.34 2.171 2.346 2.346 0 0 0 2.339-2.171V11.112a2.341 2.341 0 0 0-4.679 0V22.77M25.832 27.464a2.345 2.345 0 0 0 4.678 0V2.249a2.342 2.342 0 0 0-4.678 0v25.215M38.78 22.769a2.346 2.346 0 0 0 4.68 0V11.112a2.344 2.344 0 0 0-2.34-2.249 2.341 2.341 0 0 0-2.34 2.25v11.656M51.671 22.769a2.348 2.348 0 0 0 3.936 1.545c.434-.403.7-.955.743-1.545v-5.2a2.343 2.343 0 0 0-3.962-1.595c-.436.419-.693.99-.717 1.595v5.2M64.61 22.769a2.347 2.347 0 0 0 4.679 0V11.112a2.342 2.342 0 0 0-4.679 0V22.77M77.496 27.464a2.345 2.345 0 0 0 4.678 0V2.249A2.342 2.342 0 0 0 78.212.653a2.34 2.34 0 0 0-.716 1.596v25.215M90.424 22.769a2.346 2.346 0 0 0 4.679 0V11.112a2.343 2.343 0 0 0-2.34-2.249 2.342 2.342 0 0 0-2.339 2.25v11.656M103.321 22.769a2.346 2.346 0 0 0 4.68 0v-5.2a2.343 2.343 0 0 0-2.34-2.249 2.341 2.341 0 0 0-2.34 2.25v5.199M73.454 56.277v-5.002l-.098.043a9.253 9.253 0 0 1-3.606.915 5.303 5.303 0 0 1-3.629-1.07 4.645 4.645 0 0 1-1.58-2.244 5.397 5.397 0 0 1-.107-3 4.6 4.6 0 0 1 1.61-2.566 4.822 4.822 0 0 1 2.527-1.09 8.334 8.334 0 0 1 4.775.895l.108.056v-5.03l-.229-.061a12.78 12.78 0 0 0-4.551-.596 10.536 10.536 0 0 0-4.066.929 9.296 9.296 0 0 0-3.328 2.572 10.014 10.014 0 0 0-.182 12.181 9.545 9.545 0 0 0 5.292 3.403c2.21.538 4.528.456 6.696-.234l.368-.101M85.305 43.386a4.934 4.934 0 1 1 6.157 7.711 4.934 4.934 0 0 1-6.157-7.71m-6.867 3.848A9.87 9.87 0 0 0 90.44 56.72a9.629 9.629 0 0 0 3.157-17.729 9.934 9.934 0 0 0-15.16 8.244"></path>
+                </g>
+            </svg>
+        </a>
+
+
+
+
+
+
+
+
+
+        <button id="fwt-nav-button">
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="label active">MENU</div>
+            <div class="label">CLOSE</div>
+        </button>
+
+        <div id="fwt-utilities">
+            <button id="fwt-search-button" tabindex="1">
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" role="img" aria-labelledby="fwt-search-button-icon-title">
+    <title id="fwt-search-button-icon-title">Search</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="search" stroke="#858585" stroke-width="2">
+            <path class="header-search" d="M14.9950142,22.6292642 C13.9190142,22.1452642 12.9100142,21.4612642 12.0260142,20.5772642 C8.12001418,16.6712642 8.12001418,10.3392642 12.0260142,6.43426418 C15.9320142,2.52826418 22.2640142,2.52826418 26.1690142,6.43426418 C30.0750142,10.3392642 30.0750142,16.6712642 26.1690142,20.5772642 C24.2450142,22.5012642 21.6200142,23.4612642 19.0980142,23.4892642 L19.0980142,34.6902642" id="Stroke-1" transform="translate(19.097514, 19.097514) rotate(-45.000000) translate(-19.097514, -19.097514)"></path>
+        </g>
+    </g>
+</svg>
+            </button>
+            <button id="fwt-profile-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" id="fwt-profile-button-loggedout" role="img" aria-labelledby="fwt-profile-button-loggedout-title">
+                    <title id="fwt-profile-button-loggedout-title">Log In</title>
+                    <g fill="none" fill-rule="evenodd" stroke="#858585" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <path d="M27.5 32.077V26.07c0-3.888-3.136-7.069-6.967-7.069h-4.566C12.135 19 9 22.181 9 26.07v4.006c0 .553.454 1.001.998 1.001H20.94M12 9.857C12 6.622 14.584 4 17.772 4c3.187 0 5.772 2.622 5.772 5.857 0 3.235-2.585 5.857-5.772 5.857-3.188 0-5.772-2.622-5.772-5.857z"></path>
+                    </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" id="fwt-profile-button-loggedin" role="img" aria-labelledby="fwt-profile-button-loggedin-title">
+                    <title id="fwt-profile-button-loggedin-title">Log Out</title>
+                    <g fill="none" fill-rule="evenodd">
+                        <path stroke="#858585" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22.857 31.36c-1.616.614-3.37.95-5.202.95C9.56 32.31 3 25.749 3 17.655S9.561 3 17.655 3 32.31 9.561 32.31 17.655c0 3.988-1.727 7.703-4.31 10.344" x="0" y="0"></path>
+                        <text fill="#1BA0D7" font-family="CiscoSans, Arial, sans-serif" font-weight="300" font-size="16" x="50%" y="55%" alignment-baseline="middle" text-anchor="middle" id="fwt-initials"> </text>
+                    </g> 
+                </svg>
+            </button>
+            
+<button id="fwt-language-button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="47" height="36" viewBox="0 0 47 36" role="img" aria-labelledby="fwt-language-button-icon-title">
+        <title id="fwt-language-button-icon-title">Choose Language Selection</title>
+        <g fill="none" fill-rule="evenodd">
+            <g stroke="#858585" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="rotate(30 14.912 12.822)">
+                <path d="M23.196 28.598c-5.967 3.308-13.83.982-17.138-4.986-3.308-5.967-1.152-13.487 4.816-16.795C16.84 3.51 24.36 5.665 27.669 11.633c1.466 2.645 2.409 6.763.314 12.125"></path>
+                <ellipse cx="16.938" cy="18.031" rx="4.154" ry="12.142" transform="rotate(-30.001 16.938 18.03)"></ellipse>
+                <path d="M5.42 19.568L24.63 8.694M9.368 26.463l19.21-11.04"></path>
+            </g>
+            <text fill="#A3A3A3" font-family="CiscoSans, Arial, sans-serif" font-weight="300" font-size="12" letter-spacing=".926" style="text-transform: uppercase; direction: ltr;">
+                <tspan x="30" y="16">us</tspan>
+            </text>
+            <text fill="#A3A3A3" font-family="CiscoSans, Arial, sans-serif" font-weight="300" font-size="12" letter-spacing=".926" style="text-transform: uppercase; direction: ltr;">
+                <tspan x="30" y="29">en</tspan>
+            </text>
+        </g>
+    </svg>
+</button> 
+            <div id="fwt-masthead-overlay-arrow"></div>
+        </div>
+    </div>
+
+    <div id="fwt-masthead-overlay">
+
+
+
+
+
+
+
+
+
+
+        
+        <div id="fwt-profile">
+            
+
+
+
+
+
+
+
+
+
+
+<div id="fwt-profile-header">
+    <div class="header">
+
+        Have an account?
+
+        <button value="Close" type="button" id="fwt-profile-close-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" role="img">
+    <g fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-width="2">
+        <path d="M30.26 6.495L5.505 31.25M5.495 6.495L30.25 31.25"></path>
+    </g>
+</svg>
+        </button>
+    </div>
+</div>
+<div id="fwt-profile-content">
+
+    <ul class="checked">
+        <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11">
+               <path fill="none" fill-rule="evenodd" stroke="#1BA0D7" stroke-linecap="round" stroke-width="3" d="M1.882 4.95l2.903 2.903L10.09 2.55"></path>
+           </svg>&nbsp;&nbsp;Personalized content
+        </li>
+        <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11">
+               <path fill="none" fill-rule="evenodd" stroke="#1BA0D7" stroke-linecap="round" stroke-width="3" d="M1.882 4.95l2.903 2.903L10.09 2.55"></path>
+            </svg>&nbsp;&nbsp;Your products and support
+        </li>
+    </ul>
+    <a class="button-cta dark" href="/c/login/index.html?referer=/c/en/us/index.html" islogin="">Log In</a>
+    <ul>
+        <li><a href="https://idpswd.cloudapps.cisco.com/emailSubmitAction.do?exit_url=null">Forgot your user ID and/or password?</a></li>
+        <li><a class="account-url" href="//www.cisco.com/c/en/us/about/account.html">Manage account</a></li>
+        <li><a href="//www.cisco.com/cisco/psn/web/workspace">My Cisco</a></li>
+    </ul>
+    <div id="fwt-create-account-bar">
+        <p class="header">Need an account?</p>
+        <a class="button-cta light registration-url" href="https://idreg.cloudapps.cisco.com/idreg/guestRegistration.do">Create an account</a>
+        <ul>
+            <li><a href="//www.cisco.com/c/en/us/about/help.html">Help</a></li>
+        </ul>
+    </div>
+
+
+</div>
+        </div>
+        <div id="fwt-language">
+        <div id="fwt-language-header">
+    <div class="header"><div id="fwt-language-header-back-arrow" style="display: none;"><span></span></div>Selected country/region:
+    </div><div class="current-location">United States&nbsp;-&nbsp;<li>English</li></div><button value="Close" type="button" id="fwt-language-close-button"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" role="img">
+    <g fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-width="2">
+        <path d="M30.26 6.495L5.505 31.25M5.495 6.495L30.25 31.25"></path>
+    </g>
+</svg></button>
+</div><div id="fwt-language-content">
+    <div class="row wide-narrow language-row active"><div class="col narrow"><button>All Countries</button></div><div class="col wide" style="height: 351px;"><ul><li>Algeria - <a href="//www.cisco.com/c/en_dz/index.html"> English</a>&nbsp;• <a href="//www.cisco.com/c/fr_dz/index.html">Français</a> </li><li>Angola - <a href="//www.cisco.com/c/pt_br/index.html">Português</a> </li><li>Argentina - <a href="//www.cisco.com/c/es_ar/index.html">Español</a> </li><li>Australia &amp; New Zealand - <a href="//www.cisco.com/c/en_au/index.html">English</a> </li><li>Austria - <a href="//www.cisco.com/c/de_at/index.html">Deutsch</a> </li><li>Azerbaijan - <a href="//www.cisco.com/c/az_az/index.html">Azərbaycan dili</a> </li><li>Belgium &amp; Luxembourg - <a href="//www.cisco.com/c/en_be/index.html">English</a>&nbsp;• <a href="//www.cisco.com/c/fr_be/index.html">Français</a>&nbsp;• <a href="//www.cisco.com/c/nl_be/index.html">Nederlands</a> </li><li>Belize - <a href="//www.cisco.com/c/es_bz/index.html">Español</a> </li><li>Bolivia - <a href="//www.cisco.com/c/es_bo/index.html">Español</a> </li><li>Bosnia &amp; Herzegovina - <a href="//www.cisco.com/c/bs_ba/index.html">Bosanski</a> </li><li>Brazil - <a href="//www.cisco.com/c/pt_br/index.html">Português</a> </li><li>Bulgaria - <a href="//www.cisco.com/c/bg_bg/index.html">Български</a> </li><li>Canada - <a href="//www.cisco.com/c/en_ca/index.html"> English</a>&nbsp;• <a href="//www.cisco.com/c/fr_ca/index.html"> Français</a> </li><li>Chile - <a href="//www.cisco.com/c/es_cl/index.html">Español</a> </li><li>China - <a href="//www.cisco.com/c/zh_cn/index.html">简体中文</a> </li><li>Colombia - <a href="//www.cisco.com/c/es_co/index.html">Español</a> </li><li>Costa Rica - <a href="//www.cisco.com/c/es_cr/index.html">Español</a> </li><li>Croatia - <a href="//www.cisco.com/c/hr_hr/index.html">Hrvatski</a> </li><li>Cyprus - <a href="//www.cisco.com/c/en_cy/index.html">English</a> </li><li>Czech Republic - <a href="//www.cisco.com/c/cs_cz/index.html">Czech</a> </li><li>Denmark - <a href="//www.cisco.com/c/da_dk/index.html">Dansk</a> </li><li>Ecuador - <a href="//www.cisco.com/c/es_ec/index.html">Español</a> </li><li>Egypt - <a href="//www.cisco.com/c/en_eg/index.html">English</a>&nbsp;• <a href="//www.cisco.com/c/ar_eg/index.html">عربي</a> </li><li>El Salvador - <a href="//www.cisco.com/c/es_sv/index.html">Español</a> </li><li>Estonia - <a href="//www.cisco.com/c/et_ee/index.html">Eesti</a> </li><li>Finland - <a href="//www.cisco.com/c/fi_fi/index.html">Suomi</a> </li><li>France - <a href="//www.cisco.com/c/fr_fr/index.html">Français</a> </li><li>Germany - <a href="//www.cisco.com/c/de_de/index.html">Deutsch</a> </li><li>Greece - <a href="//www.cisco.com/c/el_gr/index.html">Ελληνικα</a> </li><li>Guatemala - <a href="//www.cisco.com/c/es_gt/index.html">Español</a> </li><li>Honduras - <a href="//www.cisco.com/c/es_hn/index.html">Español</a> </li><li>Hong Kong - <a href="//www.cisco.com/c/en_hk/index.html">English</a>&nbsp;• <a href="//www.cisco.com/c/zh_hk/index.html">繁體中文</a> </li><li>Hungary - <a href="//www.cisco.com/c/hu_hu/index.html">Magyar</a> </li><li>India - <a href="//www.cisco.com/c/en_in/index.html">English</a> </li><li>Indonesia - <a href="//www.cisco.com/c/en_id/index.html">English</a> </li><li>Israel - <a href="//www.cisco.com/c/en_il/index.html">English</a> </li><li>Italy - <a href="//www.cisco.com/c/it_it/index.html">Italiano</a> </li><li>Japan - <a href="//www.cisco.com/c/ja_jp/index.html">日本語</a> </li><li>Kazakhstan - <a href="//www.cisco.com/c/ru_kz/index.html">Русский</a> </li><li>Kenya - <a href="//www.cisco.com/c/en_dz/index.html">English</a> </li><li>Korea - <a href="//www.cisco.com/c/ko_kr/index.html">한국어</a> </li><li>Latvia - <a href="//www.cisco.com/c/lv_lv/index.html">Latvian</a> </li><li>Lithuania - <a href="//www.cisco.com/c/lt_lt/index.html">Lietuvių</a> </li><li>Macedonia-FYROM - <a href="//www.cisco.com/c/mk_mk/index.html">Македонски јазик</a> </li><li>Malaysia - <a href="//www.cisco.com/c/en_my/index.html">English</a> </li><li>Malta - <a href="//www.cisco.com/c/en_mt/index.html">English</a> </li><li>Mexico - <a href="//www.cisco.com/c/es_mx/index.html">Español</a> </li><li>Middle East - <a href="//www.cisco.com/c/en_qa/index.html">English</a>&nbsp;• <a href="//www.cisco.com/c/ar_qa/index.html">عربي</a> </li><li>Morocco - <a href="//www.cisco.com/c/en_dz/index.html">English</a>&nbsp;• <a href="//www.cisco.com/c/fr_dz/index.html">Français</a> </li><li>Mozambique - <a href="//www.cisco.com/c/pt_br/index.html">Português</a> </li><li>Netherlands - <a href="//www.cisco.com/c/nl_nl/index.html">Nederlands</a> </li><li>Nicaragua - <a href="//www.cisco.com/c/es_ni/index.html">Español</a> </li><li>Nigeria - <a href="//www.cisco.com/c/en_ng/index.html">English</a> </li><li>North Africa - <a href="//www.cisco.com/c/en_dz/index.html">English</a>&nbsp;• <a href="//www.cisco.com/c/fr_dz/index.html">Français</a> </li><li>Norway - <a href="//www.cisco.com/c/no_no/index.html">Norsk</a> </li><li>Panama - <a href="//www.cisco.com/c/es_pa/index.html">Español</a> </li><li>Paraguay - <a href="//www.cisco.com/c/es_py/index.html">Español</a> </li><li>Peru - <a href="//www.cisco.com/c/es_pe/index.html">Español</a> </li><li>Philippines - <a href="//www.cisco.com/c/en_ph/index.html">English</a> </li><li>Poland - <a href="//www.cisco.com/c/pl_pl/index.html">Polski</a> </li><li>Portugal - <a href="//www.cisco.com/c/pt_pt/index.html">Português</a> </li><li>Puerto Rico and the Caribbean - <a href="//www.cisco.com/c/es_pr/index.html">Español</a> </li><li>Romania - <a href="//www.cisco.com/c/ro_ro/index.html">România</a> </li><li>Russia - <a href="//www.cisco.com/c/ru_ru/index.html">Русский</a> </li><li>Saudi Arabia - <a href="//www.cisco.com/c/en_sa/index.html">English</a>&nbsp;• <a href="//www.cisco.com/c/ar_sa/index.html">عربي</a> </li><li>Serbia &amp; Montenegro - <a href="//www.cisco.com/c/sr_rs/index.html">Srpski</a> </li><li>Singapore - <a href="//www.cisco.com/c/en_sg/index.html">English</a> </li><li>Slovakia - <a href="//www.cisco.com/c/sk_sk/index.html">Slovensky</a> </li><li>Slovenija - <a href="//www.cisco.com/c/sl_si/index.html">Slovensko</a> </li><li>South Africa - <a href="//www.cisco.com/c/en_za/index.html">English</a> </li><li>Spain - <a href="//www.cisco.com/c/es_es/index.html">Español</a> </li><li>Sweden - <a href="//www.cisco.com/c/sv_se/index.html">Svenska</a> </li><li>Switzerland - <a href="//www.cisco.com/c/fr_ch/index.html">Français</a>&nbsp;• <a href="//www.cisco.com/c/de_ch/index.html">Deutsch</a> </li><li>Taiwan - <a href="//www.cisco.com/c/zh_tw/index.html">繁體中文</a> </li><li>Thailand - <a href="//www.cisco.com/c/th_th/index.html">ภาษาไทย</a> </li><li>Tunisia - <a href="//www.cisco.com/c/en_dz/index.html">English</a>&nbsp;• <a href="//www.cisco.com/c/fr_dz/index.html">Français</a> </li><li>Turkey - <a href="//www.cisco.com/c/tr_tr/index.html">Türkiye</a> </li><li>Ukraine - <a href="//www.cisco.com/c/uk_ua/index.html">Українська</a>&nbsp;• <a href="//www.cisco.com/c/ru_ua/index.html">Російська</a> </li><li>United Arab Emirates - <a href="//www.cisco.com/c/en_ae/index.html">English</a>&nbsp;• <a href="//www.cisco.com/c/ar_ae/index.html">عربي</a> </li><li>United Kingdom &amp; Ireland - <a href="//www.cisco.com/c/en_uk/index.html">English</a> </li><li>United States - <a href="//www.cisco.com">English</a> </li><li>Uruguay - <a href="//www.cisco.com/c/es_uy/index.html">Español</a> </li><li>Venezuela - <a href="//www.cisco.com/c/es_ve/index.html">Español</a> </li><li>Vietnam - <a href="//www.cisco.com/c/en_vn/index.html">English</a>&nbsp;• <a href="//www.cisco.com/c/vi_vn/index.html">Việt</a> </li></ul></div></div><div class="row wide-narrow language-row"><div class="col narrow"><button>North America</button></div><div class="col wide" style="height: 351px;"><ul><li>Canada - <a href="//www.cisco.com/c/en_ca/index.html"> English</a>&nbsp;• <a href="//www.cisco.com/c/fr_ca/index.html"> Français</a> </li><li>United States - <a href="//www.cisco.com">English</a> </li></ul></div></div><div class="row wide-narrow language-row"><div class="col narrow"><button>Africa</button></div><div class="col wide" style="height: 351px;"><ul><li>Algeria - <a href="//www.cisco.com/c/en_dz/index.html"> English</a>&nbsp;• <a href="//www.cisco.com/c/fr_dz/index.html">Français</a> </li><li>Angola - <a href="//www.cisco.com/c/pt_br/index.html">Português</a> </li><li>Egypt - <a href="//www.cisco.com/c/en_eg/index.html">English</a>&nbsp;• <a href="//www.cisco.com/c/ar_eg/index.html">عربي</a> </li><li>Kenya - <a href="//www.cisco.com/c/en_dz/index.html">English</a> </li><li>Morocco - <a href="//www.cisco.com/c/en_dz/index.html">English</a>&nbsp;• <a href="//www.cisco.com/c/fr_dz/index.html">Français</a> </li><li>Mozambique - <a href="//www.cisco.com/c/pt_br/index.html">Português</a> </li><li>Nigeria - <a href="//www.cisco.com/c/en_ng/index.html">English</a> </li><li>North Africa - <a href="//www.cisco.com/c/en_dz/index.html">English</a>&nbsp;• <a href="//www.cisco.com/c/fr_dz/index.html">Français</a> </li><li>South Africa - <a href="//www.cisco.com/c/en_za/index.html">English</a> </li><li>Tunisia - <a href="//www.cisco.com/c/en_dz/index.html">English</a>&nbsp;• <a href="//www.cisco.com/c/fr_dz/index.html">Français</a> </li></ul></div></div><div class="row wide-narrow language-row"><div class="col narrow"><button>Asia Pacific</button></div><div class="col wide" style="height: 351px;"><ul><li>Australia &amp; New Zealand - <a href="//www.cisco.com/c/en_au/index.html">English</a> </li><li>India - <a href="//www.cisco.com/c/en_in/index.html">English</a> </li><li>Indonesia - <a href="//www.cisco.com/c/en_id/index.html">English</a> </li><li>Japan - <a href="//www.cisco.com/c/ja_jp/index.html">日本語</a> </li><li>Korea - <a href="//www.cisco.com/c/ko_kr/index.html">한국어</a> </li><li>Malaysia - <a href="//www.cisco.com/c/en_my/index.html">English</a> </li><li>Philippines - <a href="//www.cisco.com/c/en_ph/index.html">English</a> </li><li>Singapore - <a href="//www.cisco.com/c/en_sg/index.html">English</a> </li><li>Thailand - <a href="//www.cisco.com/c/th_th/index.html">ภาษาไทย</a> </li><li>Vietnam - <a href="//www.cisco.com/c/en_vn/index.html">English</a>&nbsp;• <a href="//www.cisco.com/c/vi_vn/index.html">Việt</a> </li></ul></div></div><div class="row wide-narrow language-row"><div class="col narrow"><button>Europe</button></div><div class="col wide" style="height: 351px;"><ul><li>Austria - <a href="//www.cisco.com/c/de_at/index.html">Deutsch</a> </li><li>Azerbaijan - <a href="//www.cisco.com/c/az_az/index.html">Azərbaycan dili</a> </li><li>Belgium &amp; Luxembourg - <a href="//www.cisco.com/c/en_be/index.html">English</a>&nbsp;• <a href="//www.cisco.com/c/fr_be/index.html">Français</a>&nbsp;• <a href="//www.cisco.com/c/nl_be/index.html">Nederlands</a> </li><li>Bosnia &amp; Herzegovina - <a href="//www.cisco.com/c/bs_ba/index.html">Bosanski</a> </li><li>Bulgaria - <a href="//www.cisco.com/c/bg_bg/index.html">Български</a> </li><li>Croatia - <a href="//www.cisco.com/c/hr_hr/index.html">Hrvatski</a> </li><li>Cyprus - <a href="//www.cisco.com/c/en_cy/index.html">English</a> </li><li>Czech Republic - <a href="//www.cisco.com/c/cs_cz/index.html">Czech</a> </li><li>Denmark - <a href="//www.cisco.com/c/da_dk/index.html">Dansk</a> </li><li>Estonia - <a href="//www.cisco.com/c/et_ee/index.html">Eesti</a> </li><li>Finland - <a href="//www.cisco.com/c/fi_fi/index.html">Suomi</a> </li><li>France - <a href="//www.cisco.com/c/fr_fr/index.html">Français</a> </li><li>Germany - <a href="//www.cisco.com/c/de_de/index.html">Deutsch</a> </li><li>Greece - <a href="//www.cisco.com/c/el_gr/index.html">Ελληνικα</a> </li><li>Hungary - <a href="//www.cisco.com/c/hu_hu/index.html">Magyar</a> </li><li>Italy - <a href="//www.cisco.com/c/it_it/index.html">Italiano</a> </li><li>Kazakhstan - <a href="//www.cisco.com/c/ru_kz/index.html">Русский</a> </li><li>Latvia - <a href="//www.cisco.com/c/lv_lv/index.html">Latvian</a> </li><li>Lithuania - <a href="//www.cisco.com/c/lt_lt/index.html">Lietuvių</a> </li><li>Macedonia-FYROM - <a href="//www.cisco.com/c/mk_mk/index.html">Македонски јазик</a> </li><li>Malta - <a href="//www.cisco.com/c/en_mt/index.html">English</a> </li><li>Netherlands - <a href="//www.cisco.com/c/nl_nl/index.html">Nederlands</a> </li><li>Norway - <a href="//www.cisco.com/c/no_no/index.html">Norsk</a> </li><li>Poland - <a href="//www.cisco.com/c/pl_pl/index.html">Polski</a> </li><li>Portugal - <a href="//www.cisco.com/c/pt_pt/index.html">Português</a> </li><li>Romania - <a href="//www.cisco.com/c/ro_ro/index.html">România</a> </li><li>Russia - <a href="//www.cisco.com/c/ru_ru/index.html">Русский</a> </li><li>Serbia &amp; Montenegro - <a href="//www.cisco.com/c/sr_rs/index.html">Srpski</a> </li><li>Slovakia - <a href="//www.cisco.com/c/sk_sk/index.html">Slovensky</a> </li><li>Slovenija - <a href="//www.cisco.com/c/sl_si/index.html">Slovensko</a> </li><li>Spain - <a href="//www.cisco.com/c/es_es/index.html">Español</a> </li><li>Sweden - <a href="//www.cisco.com/c/sv_se/index.html">Svenska</a> </li><li>Switzerland - <a href="//www.cisco.com/c/fr_ch/index.html">Français</a>&nbsp;• <a href="//www.cisco.com/c/de_ch/index.html">Deutsch</a> </li><li>Turkey - <a href="//www.cisco.com/c/tr_tr/index.html">Türkiye</a> </li><li>Ukraine - <a href="//www.cisco.com/c/uk_ua/index.html">Українська</a>&nbsp;• <a href="//www.cisco.com/c/ru_ua/index.html">Російська</a> </li><li>United Kingdom &amp; Ireland - <a href="//www.cisco.com/c/en_uk/index.html">English</a> </li></ul></div></div><div class="row wide-narrow language-row"><div class="col narrow"><button>Greater China</button></div><div class="col wide" style="height: 351px;"><ul><li>China - <a href="//www.cisco.com/c/zh_cn/index.html">简体中文</a> </li><li>Hong Kong - <a href="//www.cisco.com/c/en_hk/index.html">English</a>&nbsp;• <a href="//www.cisco.com/c/zh_hk/index.html">繁體中文</a> </li><li>Taiwan - <a href="//www.cisco.com/c/zh_tw/index.html">繁體中文</a> </li></ul></div></div><div class="row wide-narrow language-row"><div class="col narrow"><button>Latin America</button></div><div class="col wide" style="height: 351px;"><ul><li>Argentina - <a href="//www.cisco.com/c/es_ar/index.html">Español</a> </li><li>Belize - <a href="//www.cisco.com/c/es_bz/index.html">Español</a> </li><li>Brazil - <a href="//www.cisco.com/c/pt_br/index.html">Português</a> </li><li>Bolivia - <a href="//www.cisco.com/c/es_bo/index.html">Español</a> </li><li>Chile - <a href="//www.cisco.com/c/es_cl/index.html">Español</a> </li><li>Colombia - <a href="//www.cisco.com/c/es_co/index.html">Español</a> </li><li>Costa Rica - <a href="//www.cisco.com/c/es_cr/index.html">Español</a> </li><li>Ecuador - <a href="//www.cisco.com/c/es_ec/index.html">Español</a> </li><li>El Salvador - <a href="//www.cisco.com/c/es_sv/index.html">Español</a> </li><li>Guatemala - <a href="//www.cisco.com/c/es_gt/index.html">Español</a> </li><li>Honduras - <a href="//www.cisco.com/c/es_hn/index.html">Español</a> </li><li>Mexico - <a href="//www.cisco.com/c/es_mx/index.html">Español</a> </li><li>Nicaragua - <a href="//www.cisco.com/c/es_ni/index.html">Español</a> </li><li>Panama - <a href="//www.cisco.com/c/es_pa/index.html">Español</a> </li><li>Paraguay - <a href="//www.cisco.com/c/es_py/index.html">Español</a> </li><li>Peru - <a href="//www.cisco.com/c/es_pe/index.html">Español</a> </li><li>Puerto Rico and the Caribbean - <a href="//www.cisco.com/c/es_pr/index.html">Español</a> </li><li>Uruguay - <a href="//www.cisco.com/c/es_uy/index.html">Español</a> </li><li>Venezuela - <a href="//www.cisco.com/c/es_ve/index.html">Español</a> </li></ul></div></div><div class="row wide-narrow language-row"><div class="col narrow"><button>Middle East</button></div><div class="col wide" style="height: 351px;"><ul><li>Israel - <a href="//www.cisco.com/c/en_il/index.html">English</a> </li><li>Middle East - <a href="//www.cisco.com/c/en_qa/index.html">English</a>&nbsp;• <a href="//www.cisco.com/c/ar_qa/index.html">عربي</a> </li><li>Saudi Arabia - <a href="//www.cisco.com/c/en_sa/index.html">English</a>&nbsp;• <a href="//www.cisco.com/c/ar_sa/index.html">عربي</a> </li><li>United Arab Emirates - <a href="//www.cisco.com/c/en_ae/index.html">English</a>&nbsp;• <a href="//www.cisco.com/c/ar_ae/index.html">عربي</a> </li></ul></div></div>
+    <div id="fwt-language-rectangle" style="bottom: 83px;"></div>
+</div></div>
+        <div id="fwt-nav-links">
+            <ul>
+                <li>
+                    <a href="/c/en/us/products/index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="41" height="36" viewBox="6 0 41 36">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FFF" d="M18.242 14.328a2.047 2.047 0 0 0-2.04-2.04H8.04A2.048 2.048 0 0 0 6 14.327v17.897c0 1.122.919 2.04 2.04 2.04h8.162c1.122 0 2.04-.918 2.04-2.04V14.328z"></path>
+        <path fill="#1F4862" stroke="#1F4862" stroke-width=".5" d="M15.12 16.335h-6a.5.5 0 0 1 0-1h6a.5.5 0 0 1 0 1zM15.12 19.931h-6a.5.5 0 0 1 0-1h6a.5.5 0 1 1 0 1zM15.12 23.525h-6a.5.5 0 1 1 0-1h6a.5.5 0 0 1 0 1zM15.12 27.121h-6a.5.5 0 1 1 0-1h6a.5.5 0 0 1 0 1zM15.12 30.716h-6a.5.5 0 0 1 0-1h6a.5.5 0 1 1 0 1z"></path>
+        <g>
+            <path fill="#FFF" d="M32.12 10.04c0-1.122-.917-2.04-2.04-2.04h-8.16a2.046 2.046 0 0 0-2.041 2.04v25.344c0 1.122.919 2.04 2.04 2.04h8.162c1.122 0 2.04-.918 2.04-2.04V10.04z"></path>
+            <path fill="#1F4862" stroke="#1F4862" stroke-width=".5" d="M29 12.048h-6a.5.5 0 0 1 0-1h6a.5.5 0 0 1 0 1zM29 15.644h-6a.5.5 0 0 1 0-1h6a.5.5 0 1 1 0 1zM29 19.238h-6a.5.5 0 1 1 0-1h6a.5.5 0 0 1 0 1zM29 22.834h-6a.5.5 0 1 1 0-1h6a.5.5 0 0 1 0 1zM29 26.429h-6a.5.5 0 0 1 0-1h6a.5.5 0 1 1 0 1z"></path>
+        </g>
+        <g>
+            <path fill="#FFF" d="M46 14.328a2.046 2.046 0 0 0-2.04-2.04h-8.162a2.046 2.046 0 0 0-2.04 2.04v17.897c0 1.122.918 2.04 2.04 2.04h8.161c1.122 0 2.04-.918 2.04-2.04V14.328z"></path>
+            <path fill="#1F4862" stroke="#1F4862" stroke-width=".5" d="M42.879 16.335h-6a.5.5 0 0 1 0-1h6a.5.5 0 0 1 0 1zM42.879 19.931h-6a.5.5 0 0 1 0-1h6a.5.5 0 1 1 0 1zM42.879 23.525h-6a.5.5 0 1 1 0-1h6a.5.5 0 0 1 0 1zM42.879 27.121h-6a.5.5 0 1 1 0-1h6a.5.5 0 0 1 0 1zM42.879 30.716h-6a.5.5 0 0 1 0-1h6a.5.5 0 1 1 0 1z"></path>
+        </g>
+    </g>
+</svg>
+                        <span>Products &amp; Services</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/c/en/us/support/index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="41" height="36" viewBox="6 4 41 36">
+    <path fill="#FEFEFE" fill-rule="evenodd" d="M15.736 34.582l6.247-6.247 3.561 3.589-6.234 6.231a2.52 2.52 0 0 1-3.568-.005 2.52 2.52 0 0 1-.006-3.568zm19.23-12.077l-3.027 3.026-3.561-3.59 3.009-3.01a2.423 2.423 0 0 0 .688-2.037 5.72 5.72 0 0 1 1.627-4.8 5.709 5.709 0 0 1 4.896-1.616.34.34 0 0 1 .192.576l-1.733 1.734c-.034.033-.058.072-.089.108-.02.019-.043.032-.063.052a2.858 2.858 0 0 0 4.042 4.042c.023-.024.039-.052.062-.076.031-.028.066-.05.096-.078l1.733-1.734a.34.34 0 0 1 .576.192 5.746 5.746 0 0 1-1.611 4.896 5.73 5.73 0 0 1-4.8 1.627 2.418 2.418 0 0 0-2.037.688zM18.469 10.167L20.62 8l5.082 5.122-2.15 2.167-1.475-.431-1.228 1.237.221 1.648 16.872 17.006a2.45 2.45 0 0 1 0 3.435 2.404 2.404 0 0 1-3.409 0L16.827 20.339c-.008-.008-.014-.019-.023-.028-2.41 1.813-5.294 4.692-7.113 8.947-3.303-8.59 6.302-16.595 6.302-16.595l1.676.228 1.228-1.238-.428-1.486z"></path>
+</svg>
+                        <span>Support &amp; Downloads</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/c/en/us/training-events.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="41" height="36" viewBox="6 4 41 36">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FFF" d="M22.745 22.968a4.43 4.43 0 1 1-8.86 0 4.43 4.43 0 0 1 8.86 0"></path>
+        <path fill="#FFF" d="M28.657 24.04a1.912 1.912 0 0 0-2.694 0l-5.287 5.286a3.571 3.571 0 0 0-.588-.054h-3.544A3.554 3.554 0 0 0 13 32.816v5.376h10.632v-5.376c0-.32-.048-.63-.129-.928l5.154-5.155c.74-.74.74-1.953 0-2.694"></path></g>
+        <path stroke="#FFF" stroke-linecap="round" d="M26.549 26.15l6.364-6.364"></path>
+        <path stroke="#FFF" stroke-linecap="round" stroke-width="2" d="M15.007 8H40M15.007 14H32.18"></path>
+    
+</svg>
+                        <span>Training &amp; Events</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/c/en/us/buy.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="41" height="36" viewBox="0 0 41 36">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FFF" d="M12.366 25.348a2.515 2.515 0 1 0 .001 5.03 2.515 2.515 0 0 0 0-5.03M26.617 25.348a2.515 2.515 0 1 0 .002 5.03 2.515 2.515 0 0 0-.002-5.03M33.336 4.94H21.189v9.102l2.92-2.918a1.78 1.78 0 0 1 2.508 0c.689.689.689 1.818 0 2.508l-5.896 5.895a1.769 1.769 0 0 1-1.237.566l-.004.001-.021.001h-.022.043l.004-.002-.107-.001.012.003a.905.905 0 0 1-.08-.003h.068a1.77 1.77 0 0 1-1.214-.514l-5.946-5.946c-.69-.69-.69-1.82 0-2.508.69-.69 1.819-.69 2.508 0l2.916 2.916v-9.1h-6.44l-.743-3.644A1.62 1.62 0 0 0 8.84 0H1.62a1.62 1.62 0 1 0 0 3.243h5.925l.346 1.697H5.648c-1.187 0-1.96.95-1.72 2.111L6.88 21.323c.241 1.16 1.408 2.111 2.593 2.111h20.035c1.186 0 2.353-.951 2.594-2.111L35.056 7.05c.24-1.161-.534-2.111-1.72-2.111"></path>
+        <path d="M19.484 20.093h-.004"></path>
+        <path fill="#FF1C07" d="M19.39 20.095l-.013-.002h-.067l.08.002M19.459 20.095l.02-.001h-.043.023z"></path>
+    </g>
+</svg>
+                        <span>Buy</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/c/en/us/partners.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="41" height="36" viewBox="6 0 41 36">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FFF" fill-rule="evenodd" d="M44 28.938V37h-7.029v-7.845a9.912 9.912 0 0 0-1.33-4.965c-.036-.063-.074-.125-.112-.187a5.54 5.54 0 0 1 2.827-.775c3.104 0 5.644 2.57 5.644 5.71zm-5.644-6.725c-1.676 0-3.035-1.375-3.035-3.071 0-1.696 1.359-3.071 3.035-3.071 1.677 0 3.035 1.375 3.035 3.07 0 1.697-1.358 3.072-3.035 3.072zM17.36 24.19a9.91 9.91 0 0 0-1.33 4.965V37H9v-8.062c0-3.14 2.54-5.71 5.644-5.71a5.54 5.54 0 0 1 2.827.775c-.038.062-.076.124-.112.187zm-2.715-1.977c-1.677 0-3.035-1.375-3.035-3.071 0-1.696 1.358-3.071 3.035-3.071 1.676 0 3.035 1.375 3.035 3.07 0 1.697-1.359 3.072-3.035 3.072zm19.098 2.644a8.48 8.48 0 0 1 1.138 4.249V37H18.12v-7.894a8.48 8.48 0 0 1 1.138-4.249c1.456-2.524 4.16-4.23 7.242-4.23 3.081 0 5.786 1.706 7.242 4.23zM26.5 19.12c-2.49 0-4.507-2.041-4.507-4.56 0-2.518 2.018-4.56 4.507-4.56s4.507 2.042 4.507 4.56c0 2.519-2.018 4.56-4.507 4.56z"></path>
+    </g>
+</svg>
+                        <span>Partners</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="root__container">
+	<header [ngClass]="{'main__header-dark': darkModeActive}" class="main__header">
+
+		<div class="left__section">
+
+		
+				<h3 class="date__text">dasari</h3>
+		
+
+		</div>
+
+		<h3 class="date__text">Weather</h3>
+
+
+		<div class="mode-toggle__container">
+			<label class="toggle-button__container">
+                <input (click)="modeToggleSwitch()" type="checkbox" class="mode-toggle__input" />
+                  <span [ngClass]="{'mode-toggle__bg-checked': darkModeActive}" class="mode-toggle__bg"></span>
+                  <span [ngClass]="{'mode-toggle__circle-checked': darkModeActive}" class="mode-toggle__circle"></span>
+            </label>
+		</div>
+
+	</header>
+
+	<!-- Main Content -->
+
+
+	<main class="main__container">
+		<div class="main-container__bg" [ngClass]="{'main-container__bg-dark': darkModeActive}"></div>
+    
+		<router-outlet></router-outlet>
+	</main>
+
+	<!-- Footer -->
+
+	<footer class="main__footer">
+		<small class="copyright__text"></small>
+	</footer>
+</div>

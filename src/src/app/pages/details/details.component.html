@@ -1,0 +1,443 @@
+<div class="details-page__wrapper-dark">
+	<svg class="background-gradient__circle" viewBox="4572 73 1328 1328">
+
+		<circle cx="664" cy="664" r="664" fill="url(#ddd)" transform="translate(4572 73)" />
+	</svg>
+
+	<svg class="back__button" routerLink="" viewBox="4085 152 98.5 126">
+		<defs>
+			<style>
+				.a {
+					fill: #2b244d;
+				}
+
+				.b {
+					fill: rgba(0, 0, 0, 0);
+				}
+
+				.b,
+				.c {
+					stroke: #fff;
+					stroke-width: 2px;
+				}
+
+				.c {
+					fill: none;
+				}
+
+				.d {
+					fill: #fff;
+					font-size: 15px;
+					font-family: SegoeUI, Segoe UI;
+					letter-spacing: 0.4em;
+				}
+			</style>
+		</defs>
+		<g transform="translate(3980)">
+			<circle class="a" cx="39" cy="39" r="39" transform="translate(105 152)" />
+			<line class="b" x1="80" transform="translate(123.5 190.5)" />
+			<line class="b" y1="26" x2="26" transform="translate(123.5 164.5)" />
+			<line class="c" x1="26" y1="27" transform="translate(123.5 190.5)" />
+			<text class="d" transform="translate(117 274)">
+				<tspan x="0" y="0">BACK</tspan>
+			</text>
+		</g>
+	</svg>
+
+	<section class="main-weather__card-dark">
+		<section class="card-header__container-dark" [ngSwitch]="true">
+
+			<svg class="city__illustration" viewBox="0 0 3000 1000">
+				<linearGradient id="a" x1="1487" x2="1487" y1="-11.5" y2="998.5" gradientUnits="userSpaceOnUse">
+					<stop offset="0" stop-color="#331464" />
+					<stop offset="1" stop-color="#2e3192" />
+				</linearGradient>
+				<path fill="url(#a)" d="M-25.5-11.5h3025v1010h-3025z" />
+
+				<path fill="#FFF" d="M628.77 275.6h-185a12.86 12.86 0 0 1-12.82-12.83c0-7.05 5.77-12.82 12.82-12.82h185c7.05 0 12.82 5.77 12.82 12.82 0 7.05-5.77 12.82-12.82 12.82z"
+				 opacity=".03" />
+				<path fill="#FFF" d="M919.4 345.01H721.8a6.54 6.54 0 0 1-6.53-6.52 6.54 6.54 0 0 1 6.53-6.52h197.6a6.54 6.54 0 0 1 6.52 6.52 6.54 6.54 0 0 1-6.53 6.52z"
+				 opacity=".1" />
+				<path fill="#FFF" d="M1274.29 431.04h-51.05c-5.61 0-10.2 4.59-10.2 10.2 0 5.6 4.59 10.19 10.2 10.19h51.05c5.6 0 10.2-4.59 10.2-10.2 0-5.6-4.6-10.19-10.2-10.19zm-408.55 3.95H664.22a7.27 7.27 0 0 1-7.26-7.25 7.27 7.27 0 0 1 7.26-7.26h201.52a7.27 7.27 0 0 1 7.25 7.26 7.27 7.27 0 0 1-7.25 7.25z"
+				 opacity=".05" />
+				<path fill="#FFF" d="M2822.73 136h-203.5a6.26 6.26 0 0 1 0-12.52h203.5a6.26 6.26 0 1 1 0 12.52zm-630.5 63.2H2005.3a14.5 14.5 0 0 1-14.47-14.47 14.5 14.5 0 0 1 14.47-14.46h186.93a14.5 14.5 0 0 1 14.47 14.46 14.5 14.5 0 0 1-14.47 14.47z"
+				 opacity=".1" />
+				<path fill="#FFF" d="M464.45 88H89.17a6.71 6.71 0 0 1 0-13.42h375.28a6.71 6.71 0 0 1 0 13.42zM245.1 375H45.44c-4.29 0-7.8-3.5-7.8-7.8v-5.6c0-4.28 3.51-7.8 7.8-7.8h199.67c4.28 0 7.8 3.52 7.8 7.8v5.6c0 4.3-3.52 7.8-7.8 7.8z"
+				 opacity=".07" />
+				<path fill="#FFF" d="M2419.99 419.46H2190.5a13.01 13.01 0 0 1-12.97-12.97 13 13 0 0 1 12.97-12.97h229.48c7.13 0 12.97 5.84 12.97 12.97 0 7.13-5.84 12.97-12.97 12.97zm129.55-68.09h-55.7a6.74 6.74 0 0 0-6.72 6.73c0 3.7 3.02 6.72 6.72 6.72h55.7c3.7 0 6.72-3.03 6.72-6.72 0-3.7-3.03-6.73-6.72-6.73zm309.98 149.96h-195.36a14.52 14.52 0 0 1-14.47-14.47c0-7.96 6.51-14.48 14.47-14.48h195.36c7.97 0 14.48 6.52 14.48 14.48 0 7.96-6.51 14.47-14.48 14.47z"
+				 opacity=".1" />
+
+				<path fill="url(#n)" stroke="#000" stroke-miterlimit="10" d="M-18.5 922.5h3018v77h-3018z" />
+
+				<path d="M2301.55 722.92c1.92-1.66 3.35-8.26 3.35-8.26s-6.2 3.1-6.2 5.68c0 2.58 1.04 4.12 2.85 2.58zm2.32-2.58s4.12 0 9.28-1.04 8.77 1.55 9.8.52-15.47-4.64-19.08-.52"
+				/>
+				<path d="M2298.7 720.34s-8.76 3.6-11.34 3.1-7.74-2.07.51-2.07c8.26 0 9.4-.38 11.41-2.51m-.07 45.8c1.15-2.33 2-11.66 2-11.66s-3.7 4.37-3.7 8.02.62 5.83 1.7 3.64zm1.39-3.64s2.45 0 5.53-1.46 5.23 2.19 5.84.73-9.22-6.56-11.38-.73"
+				/>
+				<path d="M2297.52 761.02s-5.23 5.1-6.77 4.37c-1.53-.73-4.6-2.91.31-2.91 4.92 0 5.6-.55 6.8-3.56m-70.11-4c-1.24-1.66-2.15-8.26-2.15-8.26s3.97 3.1 3.97 5.68c0 2.58-.67 4.12-1.82 2.58zm-1.49-2.58s-2.65 0-5.95-1.04-5.62 1.55-6.28.52c-.66-1.03 9.92-4.64 12.23-.52"
+				/>
+				<path d="M2229.57 752.34s5.61 3.6 7.27 3.1 4.95-2.07-.33-2.07-6.03-.38-7.31-2.51m-123.45-48.94c-1.24-1.66-2.15-8.26-2.15-8.26s3.97 3.1 3.97 5.68c0 2.58-.67 4.12-1.82 2.58z"
+				/>
+				<path d="M2117 698.34s-2.59 0-5.82-1.17c-3.24-1.16-5.5 1.75-6.15.59-.65-1.17 9.7-5.23 11.97-.59" />
+				<path d="M2104.67 697.76s-6.17 2.56-6.69 4.21c-.52 1.65-1.13 5.25 1.89.9 3.01-4.34 3.74-4.72 6.23-4.57" />
+
+				<path fill="url(#o)" d="M1890.16 24.28C1933.92 19.94 2127-2.5 2127-2.5v116l-237.25-85.52c-1.86-.67-1.54-3.5.41-3.7z" />
+				<path fill="#1F1D2B" d="M783.56 119.74H629.7a7.46 7.46 0 0 1-7.45-7.45 7.47 7.47 0 0 1 7.45-7.44h153.85c4.1 0 7.44 3.35 7.44 7.44 0 4.1-3.35 7.45-7.44 7.45z"
+				/>
+				<path fill="#1F1D2B" d="M781.45 111.56H631.71a7.46 7.46 0 0 1-7.45-7.44c0-4.1 3.35-7.45 7.45-7.45h149.74c4.1 0 7.44 3.35 7.44 7.45a7.46 7.46 0 0 1-7.44 7.44z"
+				 opacity=".43" />
+				<path fill="#1F1D2B" d="M789.47 112.03H624.53a5.5 5.5 0 0 1-5.48-5.49 5.5 5.5 0 0 1 5.49-5.48h164.93a5.5 5.5 0 0 1 5.48 5.48 5.5 5.5 0 0 1-5.49 5.49z"
+				 opacity=".86" />
+				<path fill="#1F1D2B" d="M723.45 146.24l-15.85-31.41a7.46 7.46 0 0 1 3.3-10 7.46 7.46 0 0 1 9.99 3.3l15.85 31.4a7.46 7.46 0 0 1-3.3 10 7.46 7.46 0 0 1-10-3.3z"
+				 opacity=".76" />
+				<path fill="#1F1D2B" d="M709.86 93.81l26.61-23a7.46 7.46 0 0 1 10.5.76 7.46 7.46 0 0 1-.76 10.5l-26.62 23a7.46 7.46 0 0 1-10.5-.76 7.46 7.46 0 0 1 .77-10.5zm58.78 6.75l28.88-25.08L789 117z"
+				/>
+				<radialGradient id="p" cx="797" cy="76" r="4" gradientUnits="userSpaceOnUse">
+					<stop offset="0" stop-color="#c81464" />
+					<stop offset="1" stop-color="#933100" stop-opacity="0" />
+				</radialGradient>
+				<path fill="url(#p)" d="M797 80c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z" />
+				<g opacity=".35">
+					<radialGradient id="q" cx="796.58" cy="80" r="4" gradientTransform="translate(291.91 27.37) scale(.6328)" gradientUnits="userSpaceOnUse">
+						<stop offset="0" stop-color="#fff" />
+						<stop offset="1" stop-color="#fff" stop-opacity="0" />
+					</radialGradient>
+					<path fill="url(#q)" d="M796 80.53a2.53 2.53 0 1 1 0-5.05 2.53 2.53 0 0 1 0 5.05z" />
+				</g>
+				<path fill="#FFF" d="M1118.5 120h-182a3.51 3.51 0 0 1-3.5-3.5v-8a3.5 3.5 0 0 1 3.5-3.5h182a3.5 3.5 0 0 1 3.5 3.5v8c0 1.92-1.58 3.5-3.5 3.5zm-178 111h-98a3.5 3.5 0 0 1 0-7h98a3.5 3.5 0 0 1 0 7zm-74-115h-36a3.5 3.5 0 0 1 0-7h36a3.5 3.5 0 0 1 0 7zm112-62h-62a3.5 3.5 0 0 1 0-7h62a3.5 3.5 0 0 1 0 7zm198 51h-26a3.5 3.5 0 0 1 0-7h26a3.5 3.5 0 0 1 0 7z"
+				 opacity=".03" />
+
+			</svg>
+
+
+			<div class="header-content__wrapper">
+
+				<div class="today-weather__container">
+					<!--{{today}}-->
+					<div class="temp-state__container">
+						<span class="temperature__text">{{temp}}°</span>
+						<span class="weather-state__text">{{state}}</span>
+					</div>
+					<div class="hum-wind__container">
+						<div class="hum__container">
+							<span class="hum__text">humidity</span>
+							<span class="hum-value__text">{{hum}} %</span>
+						</div>
+
+						<div class="hum-wind__separator">&nbsp;</div>
+
+						<div class="wind__container">
+							<span class="wind__text">wind</span>
+							<span class="wind-value__text">{{wind}} K/M</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="city-name__container">
+					<div class="city-name__underline">
+						<span class="city-name__text">{{city}}</span>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<main class="body-content__wrapper">
+
+			<section class="forecast__container">
+
+				<div class="day-weather__container" [ngSwitch]="true">
+					<span class="day-name__text">{{day1Name}}</span>
+					<svg class="forecast-condition__icon" *ngSwitchCase="day1State === 'Clouds'" viewBox="2436.9 -843.1 275.5 274.1">
+						<g data-name="cloudy icon" transform="translate(84 790)">
+							<circle cx="137" cy="137" r="137" fill="#fff" data-name="Ellipse 23" transform="translate(2354 -1633)" />
+							<path fill="#ffde17" d="M2523.4-1361.5a37.2 37.2 0 0 0 8.4-23.4c0-22-19.8-40-44.1-40l-3.4.1h-.5a39.8 39.8 0 0 0-39.4-33.7 40.1 40.1 0 0 0-10 1.2 40 40 0 0 0-35.2-21.2 40.1 40.1 0 0 0-38.5 29 137.4 137.4 0 0 1-7.8-45.8 138.8 138.8 0 0 1 2.8-27.8 137 137 0 0 1 8-25.8 137.8 137.8 0 0 1 12.7-23.4 138.8 138.8 0 0 1 16.8-20.4 138.8 138.8 0 0 1 20.4-16.9 137.8 137.8 0 0 1 23.4-12.7 137 137 0 0 1 25.9-8 138.8 138.8 0 0 1 27.7-2.8 138.8 138.8 0 0 1 27.8 2.8 137 137 0 0 1 25.9 8 137.8 137.8 0 0 1 23.4 12.7 138.8 138.8 0 0 1 20.4 16.9 138.7 138.7 0 0 1 16.8 20.4 137.8 137.8 0 0 1 12.7 23.4 137 137 0 0 1 8 25.8 138.8 138.8 0 0 1 2.8 27.8 137.4 137.4 0 0 1-8 46.1 137.2 137.2 0 0 1-21.9 39.6 138.2 138.2 0 0 1-33.2 30.1 136.8 136.8 0 0 1-41.9 18z"
+							 data-name="Subtraction 1" />
+						</g>
+					</svg>
+
+					<svg class="forecast-condition__icon" *ngSwitchCase="day1State === 'Rain' || day1State === 'Drizzle'" viewBox="3170 -843.1 163.5 242.7">
+						<g data-name="Rain Icon">
+							<g data-name="Water Drops">
+								<path fill="#0032cc" d="M3295.4-824.5s85.8 133.5 0 133.5 0-133.5 0-133.5z" data-name="Path 7" />
+								<path fill="#003eff" d="M3239.4-843s-156.1 242.6 0 242.6 0-242.7 0-242.7z" data-name="Path 3" />
+							</g>
+						</g>
+					</svg>
+
+					<svg class="forecast-condition__icon" *ngSwitchCase="day1State === 'Storm'" viewBox="3487.9 -810.7 291.2 200.3">
+						<g data-name="Strom icon" transform="translate(1959 -1260.7)">
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 14" rx="55.3" ry="51.7" transform="translate(1529 490.4)" />
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 15" rx="55.3" ry="51.7" transform="translate(1569.6 467.8)"
+							/>
+							<circle cx="55.3" cy="55.3" r="55.3" class="cls-1" data-name="Ellipse 16" transform="translate(1618.9 476.8)" />
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 17" rx="55.3" ry="51.7" transform="translate(1631.8 450)" />
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 18" rx="55.3" ry="51.7" transform="translate(1687.1 477.5)"
+							/>
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 19" rx="55.3" ry="51.7" transform="translate(1709.6 507.3)"
+							/>
+							<circle cx="55.3" cy="55.3" r="55.3" class="cls-1" data-name="Ellipse 20" transform="translate(1639.6 500.1)" />
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 21" rx="55.3" ry="51.7" transform="translate(1569.6 507.3)"
+							/>
+							<path fill="none" stroke="#fd0" stroke-width="18" d="M1732.5 644l-61.4-61.4 22.5-10.3 26.8 5.1 9.5-22.4-38-37.2" data-name="Path 59"
+							/>
+							<path fill="none" stroke="#fd0" stroke-width="15" d="M1597.2 539.5l31.2 25.9-24.8 22.2 17.3 36.2" data-name="Path 60" />
+						</g>
+					</svg>
+
+
+					<svg class="forecast-condition__icon" *ngSwitchCase="day1State === 'Sunny' || day1State === 'Clear'" viewBox="2050 -845 262 262">
+						<circle cx="131" cy="131" r="131" fill="#ffde17" data-name="Sun Icon" transform="translate(2050 -845)" />
+					</svg>
+
+					<span class="day-temp__text">{{day1Temp}}°</span>
+					<span class="day-state__text">{{day1State}}</span>
+				</div>
+
+				<div class="day-weather__container" [ngSwitch]="true">
+					<span class="day-name__text">{{day2Name}}</span>
+					<svg class="forecast-condition__icon" *ngSwitchCase="day2State === 'Clouds'" viewBox="2436.9 -843.1 275.5 274.1">
+						<g data-name="cloudy icon" transform="translate(84 790)">
+							<circle cx="137" cy="137" r="137" fill="#fff" data-name="Ellipse 23" transform="translate(2354 -1633)" />
+							<path fill="#ffde17" d="M2523.4-1361.5a37.2 37.2 0 0 0 8.4-23.4c0-22-19.8-40-44.1-40l-3.4.1h-.5a39.8 39.8 0 0 0-39.4-33.7 40.1 40.1 0 0 0-10 1.2 40 40 0 0 0-35.2-21.2 40.1 40.1 0 0 0-38.5 29 137.4 137.4 0 0 1-7.8-45.8 138.8 138.8 0 0 1 2.8-27.8 137 137 0 0 1 8-25.8 137.8 137.8 0 0 1 12.7-23.4 138.8 138.8 0 0 1 16.8-20.4 138.8 138.8 0 0 1 20.4-16.9 137.8 137.8 0 0 1 23.4-12.7 137 137 0 0 1 25.9-8 138.8 138.8 0 0 1 27.7-2.8 138.8 138.8 0 0 1 27.8 2.8 137 137 0 0 1 25.9 8 137.8 137.8 0 0 1 23.4 12.7 138.8 138.8 0 0 1 20.4 16.9 138.7 138.7 0 0 1 16.8 20.4 137.8 137.8 0 0 1 12.7 23.4 137 137 0 0 1 8 25.8 138.8 138.8 0 0 1 2.8 27.8 137.4 137.4 0 0 1-8 46.1 137.2 137.2 0 0 1-21.9 39.6 138.2 138.2 0 0 1-33.2 30.1 136.8 136.8 0 0 1-41.9 18z"
+							 data-name="Subtraction 1" />
+						</g>
+					</svg>
+
+					<svg class="forecast-condition__icon" *ngSwitchCase="day2State === 'Rain' || day2State === 'Drizzle'" viewBox="3170 -843.1 163.5 242.7">
+						<g data-name="Rain Icon">
+							<g data-name="Water Drops">
+								<path fill="#0032cc" d="M3295.4-824.5s85.8 133.5 0 133.5 0-133.5 0-133.5z" data-name="Path 7" />
+								<path fill="#003eff" d="M3239.4-843s-156.1 242.6 0 242.6 0-242.7 0-242.7z" data-name="Path 3" />
+							</g>
+						</g>
+					</svg>
+
+					<svg class="forecast-condition__icon" *ngSwitchCase="day2State === 'Storm'" viewBox="3487.9 -810.7 291.2 200.3">
+						<g data-name="Strom icon" transform="translate(1959 -1260.7)">
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 14" rx="55.3" ry="51.7" transform="translate(1529 490.4)" />
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 15" rx="55.3" ry="51.7" transform="translate(1569.6 467.8)"
+							/>
+							<circle cx="55.3" cy="55.3" r="55.3" class="cls-1" data-name="Ellipse 16" transform="translate(1618.9 476.8)" />
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 17" rx="55.3" ry="51.7" transform="translate(1631.8 450)" />
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 18" rx="55.3" ry="51.7" transform="translate(1687.1 477.5)"
+							/>
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 19" rx="55.3" ry="51.7" transform="translate(1709.6 507.3)"
+							/>
+							<circle cx="55.3" cy="55.3" r="55.3" class="cls-1" data-name="Ellipse 20" transform="translate(1639.6 500.1)" />
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 21" rx="55.3" ry="51.7" transform="translate(1569.6 507.3)"
+							/>
+							<path fill="none" stroke="#fd0" stroke-width="18" d="M1732.5 644l-61.4-61.4 22.5-10.3 26.8 5.1 9.5-22.4-38-37.2" data-name="Path 59"
+							/>
+							<path fill="none" stroke="#fd0" stroke-width="15" d="M1597.2 539.5l31.2 25.9-24.8 22.2 17.3 36.2" data-name="Path 60" />
+						</g>
+					</svg>
+
+
+					<svg class="forecast-condition__icon" *ngSwitchCase="day2State === 'Sunny' || day2State === 'Clear'" viewBox="2050 -845 262 262">
+						<circle cx="131" cy="131" r="131" fill="#ffde17" data-name="Sun Icon" transform="translate(2050 -845)" />
+					</svg>
+					<span class="day-temp__text">{{day2Temp}}°</span>
+					<span class="day-state__text">{{day2State}}</span>
+				</div>
+
+				<div class="day-weather__container" [ngSwitch]="true">
+					<span class="day-name__text">{{day3Name}}</span>
+					<svg class="forecast-condition__icon" *ngSwitchCase="day3State === 'Clouds'" viewBox="2436.9 -843.1 275.5 274.1">
+						<g data-name="cloudy icon" transform="translate(84 790)">
+							<circle cx="137" cy="137" r="137" fill="#fff" data-name="Ellipse 23" transform="translate(2354 -1633)" />
+							<path fill="#ffde17" d="M2523.4-1361.5a37.2 37.2 0 0 0 8.4-23.4c0-22-19.8-40-44.1-40l-3.4.1h-.5a39.8 39.8 0 0 0-39.4-33.7 40.1 40.1 0 0 0-10 1.2 40 40 0 0 0-35.2-21.2 40.1 40.1 0 0 0-38.5 29 137.4 137.4 0 0 1-7.8-45.8 138.8 138.8 0 0 1 2.8-27.8 137 137 0 0 1 8-25.8 137.8 137.8 0 0 1 12.7-23.4 138.8 138.8 0 0 1 16.8-20.4 138.8 138.8 0 0 1 20.4-16.9 137.8 137.8 0 0 1 23.4-12.7 137 137 0 0 1 25.9-8 138.8 138.8 0 0 1 27.7-2.8 138.8 138.8 0 0 1 27.8 2.8 137 137 0 0 1 25.9 8 137.8 137.8 0 0 1 23.4 12.7 138.8 138.8 0 0 1 20.4 16.9 138.7 138.7 0 0 1 16.8 20.4 137.8 137.8 0 0 1 12.7 23.4 137 137 0 0 1 8 25.8 138.8 138.8 0 0 1 2.8 27.8 137.4 137.4 0 0 1-8 46.1 137.2 137.2 0 0 1-21.9 39.6 138.2 138.2 0 0 1-33.2 30.1 136.8 136.8 0 0 1-41.9 18z"
+							 data-name="Subtraction 1" />
+						</g>
+					</svg>
+
+					<svg class="forecast-condition__icon" *ngSwitchCase="day3State === 'Rain' || day3State === 'Drizzle'" viewBox="3170 -843.1 163.5 242.7">
+						<g data-name="Rain Icon">
+							<g data-name="Water Drops">
+								<path fill="#0032cc" d="M3295.4-824.5s85.8 133.5 0 133.5 0-133.5 0-133.5z" data-name="Path 7" />
+								<path fill="#003eff" d="M3239.4-843s-156.1 242.6 0 242.6 0-242.7 0-242.7z" data-name="Path 3" />
+							</g>
+						</g>
+					</svg>
+
+					<svg class="forecast-condition__icon" *ngSwitchCase="day3State === 'Storm'" viewBox="3487.9 -810.7 291.2 200.3">
+						<g data-name="Strom icon" transform="translate(1959 -1260.7)">
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 14" rx="55.3" ry="51.7" transform="translate(1529 490.4)" />
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 15" rx="55.3" ry="51.7" transform="translate(1569.6 467.8)"
+							/>
+							<circle cx="55.3" cy="55.3" r="55.3" class="cls-1" data-name="Ellipse 16" transform="translate(1618.9 476.8)" />
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 17" rx="55.3" ry="51.7" transform="translate(1631.8 450)" />
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 18" rx="55.3" ry="51.7" transform="translate(1687.1 477.5)"
+							/>
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 19" rx="55.3" ry="51.7" transform="translate(1709.6 507.3)"
+							/>
+							<circle cx="55.3" cy="55.3" r="55.3" class="cls-1" data-name="Ellipse 20" transform="translate(1639.6 500.1)" />
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 21" rx="55.3" ry="51.7" transform="translate(1569.6 507.3)"
+							/>
+							<path fill="none" stroke="#fd0" stroke-width="18" d="M1732.5 644l-61.4-61.4 22.5-10.3 26.8 5.1 9.5-22.4-38-37.2" data-name="Path 59"
+							/>
+							<path fill="none" stroke="#fd0" stroke-width="15" d="M1597.2 539.5l31.2 25.9-24.8 22.2 17.3 36.2" data-name="Path 60" />
+						</g>
+					</svg>
+
+
+					<svg class="forecast-condition__icon" *ngSwitchCase="day3State === 'Sunny' || day3State === 'Clear'" viewBox="2050 -845 262 262">
+						<circle cx="131" cy="131" r="131" fill="#ffde17" data-name="Sun Icon" transform="translate(2050 -845)" />
+					</svg>
+
+					<span class="day-temp__text">{{day3Temp}}°</span>
+					<span class="day-state__text">{{day3State}}</span>
+				</div>
+
+
+				<div class="day-weather__container" [ngSwitch]="true">
+					<span class="day-name__text">{{day4Name}}</span>
+					<svg class="forecast-condition__icon" *ngSwitchCase="day4State === 'Clouds'" viewBox="2436.9 -843.1 275.5 274.1">
+						<g data-name="cloudy icon" transform="translate(84 790)">
+							<circle cx="137" cy="137" r="137" fill="#fff" data-name="Ellipse 23" transform="translate(2354 -1633)" />
+							<path fill="#ffde17" d="M2523.4-1361.5a37.2 37.2 0 0 0 8.4-23.4c0-22-19.8-40-44.1-40l-3.4.1h-.5a39.8 39.8 0 0 0-39.4-33.7 40.1 40.1 0 0 0-10 1.2 40 40 0 0 0-35.2-21.2 40.1 40.1 0 0 0-38.5 29 137.4 137.4 0 0 1-7.8-45.8 138.8 138.8 0 0 1 2.8-27.8 137 137 0 0 1 8-25.8 137.8 137.8 0 0 1 12.7-23.4 138.8 138.8 0 0 1 16.8-20.4 138.8 138.8 0 0 1 20.4-16.9 137.8 137.8 0 0 1 23.4-12.7 137 137 0 0 1 25.9-8 138.8 138.8 0 0 1 27.7-2.8 138.8 138.8 0 0 1 27.8 2.8 137 137 0 0 1 25.9 8 137.8 137.8 0 0 1 23.4 12.7 138.8 138.8 0 0 1 20.4 16.9 138.7 138.7 0 0 1 16.8 20.4 137.8 137.8 0 0 1 12.7 23.4 137 137 0 0 1 8 25.8 138.8 138.8 0 0 1 2.8 27.8 137.4 137.4 0 0 1-8 46.1 137.2 137.2 0 0 1-21.9 39.6 138.2 138.2 0 0 1-33.2 30.1 136.8 136.8 0 0 1-41.9 18z"
+							 data-name="Subtraction 1" />
+						</g>
+					</svg>
+
+					<svg class="forecast-condition__icon" *ngSwitchCase="day4State === 'Rain' || day4State === 'Drizzle'" viewBox="3170 -843.1 163.5 242.7">
+						<g data-name="Rain Icon">
+							<g data-name="Water Drops">
+								<path fill="#0032cc" d="M3295.4-824.5s85.8 133.5 0 133.5 0-133.5 0-133.5z" data-name="Path 7" />
+								<path fill="#003eff" d="M3239.4-843s-156.1 242.6 0 242.6 0-242.7 0-242.7z" data-name="Path 3" />
+							</g>
+						</g>
+					</svg>
+
+					<svg class="forecast-condition__icon" *ngSwitchCase="day4State === 'Storm'" viewBox="3487.9 -810.7 291.2 200.3">
+						<g data-name="Strom icon" transform="translate(1959 -1260.7)">
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 14" rx="55.3" ry="51.7" transform="translate(1529 490.4)" />
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 15" rx="55.3" ry="51.7" transform="translate(1569.6 467.8)"
+							/>
+							<circle cx="55.3" cy="55.3" r="55.3" class="cls-1" data-name="Ellipse 16" transform="translate(1618.9 476.8)" />
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 17" rx="55.3" ry="51.7" transform="translate(1631.8 450)" />
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 18" rx="55.3" ry="51.7" transform="translate(1687.1 477.5)"
+							/>
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 19" rx="55.3" ry="51.7" transform="translate(1709.6 507.3)"
+							/>
+							<circle cx="55.3" cy="55.3" r="55.3" class="cls-1" data-name="Ellipse 20" transform="translate(1639.6 500.1)" />
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 21" rx="55.3" ry="51.7" transform="translate(1569.6 507.3)"
+							/>
+							<path fill="none" stroke="#fd0" stroke-width="18" d="M1732.5 644l-61.4-61.4 22.5-10.3 26.8 5.1 9.5-22.4-38-37.2" data-name="Path 59"
+							/>
+							<path fill="none" stroke="#fd0" stroke-width="15" d="M1597.2 539.5l31.2 25.9-24.8 22.2 17.3 36.2" data-name="Path 60" />
+						</g>
+					</svg>
+
+
+					<svg class="forecast-condition__icon" *ngSwitchCase="day4State === 'Sunny' || day4State === 'Clear'" viewBox="2050 -845 262 262">
+						<circle cx="131" cy="131" r="131" fill="#ffde17" data-name="Sun Icon" transform="translate(2050 -845)" />
+					</svg>
+
+					<span class="day-temp__text">{{day4Temp}}°</span>
+					<span class="day-state__text">{{day4State}}</span>
+				</div>
+
+				<div class="day-weather__container" [ngSwitch]="true">
+					<span class="day-name__text">{{day5Name}}</span>
+					<svg class="forecast-condition__icon" *ngSwitchCase="day5State === 'Clouds'" viewBox="2436.9 -843.1 275.5 274.1">
+						<g data-name="cloudy icon" transform="translate(84 790)">
+							<circle cx="137" cy="137" r="137" fill="#fff" data-name="Ellipse 23" transform="translate(2354 -1633)" />
+							<path fill="#ffde17" d="M2523.4-1361.5a37.2 37.2 0 0 0 8.4-23.4c0-22-19.8-40-44.1-40l-3.4.1h-.5a39.8 39.8 0 0 0-39.4-33.7 40.1 40.1 0 0 0-10 1.2 40 40 0 0 0-35.2-21.2 40.1 40.1 0 0 0-38.5 29 137.4 137.4 0 0 1-7.8-45.8 138.8 138.8 0 0 1 2.8-27.8 137 137 0 0 1 8-25.8 137.8 137.8 0 0 1 12.7-23.4 138.8 138.8 0 0 1 16.8-20.4 138.8 138.8 0 0 1 20.4-16.9 137.8 137.8 0 0 1 23.4-12.7 137 137 0 0 1 25.9-8 138.8 138.8 0 0 1 27.7-2.8 138.8 138.8 0 0 1 27.8 2.8 137 137 0 0 1 25.9 8 137.8 137.8 0 0 1 23.4 12.7 138.8 138.8 0 0 1 20.4 16.9 138.7 138.7 0 0 1 16.8 20.4 137.8 137.8 0 0 1 12.7 23.4 137 137 0 0 1 8 25.8 138.8 138.8 0 0 1 2.8 27.8 137.4 137.4 0 0 1-8 46.1 137.2 137.2 0 0 1-21.9 39.6 138.2 138.2 0 0 1-33.2 30.1 136.8 136.8 0 0 1-41.9 18z"
+							 data-name="Subtraction 1" />
+						</g>
+					</svg>
+
+					<svg class="forecast-condition__icon" *ngSwitchCase="day5State === 'Rain' || day5State === 'Drizzle'" viewBox="3170 -843.1 163.5 242.7">
+						<g data-name="Rain Icon">
+							<g data-name="Water Drops">
+								<path fill="#0032cc" d="M3295.4-824.5s85.8 133.5 0 133.5 0-133.5 0-133.5z" data-name="Path 7" />
+								<path fill="#003eff" d="M3239.4-843s-156.1 242.6 0 242.6 0-242.7 0-242.7z" data-name="Path 3" />
+							</g>
+						</g>
+					</svg>
+
+					<svg class="forecast-condition__icon" *ngSwitchCase="day5State === 'Storm'" viewBox="3487.9 -810.7 291.2 200.3">
+						<g data-name="Strom icon" transform="translate(1959 -1260.7)">
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 14" rx="55.3" ry="51.7" transform="translate(1529 490.4)" />
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 15" rx="55.3" ry="51.7" transform="translate(1569.6 467.8)"
+							/>
+							<circle cx="55.3" cy="55.3" r="55.3" class="cls-1" data-name="Ellipse 16" transform="translate(1618.9 476.8)" />
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 17" rx="55.3" ry="51.7" transform="translate(1631.8 450)" />
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 18" rx="55.3" ry="51.7" transform="translate(1687.1 477.5)"
+							/>
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 19" rx="55.3" ry="51.7" transform="translate(1709.6 507.3)"
+							/>
+							<circle cx="55.3" cy="55.3" r="55.3" class="cls-1" data-name="Ellipse 20" transform="translate(1639.6 500.1)" />
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 21" rx="55.3" ry="51.7" transform="translate(1569.6 507.3)"
+							/>
+							<path fill="none" stroke="#fd0" stroke-width="18" d="M1732.5 644l-61.4-61.4 22.5-10.3 26.8 5.1 9.5-22.4-38-37.2" data-name="Path 59"
+							/>
+							<path fill="none" stroke="#fd0" stroke-width="15" d="M1597.2 539.5l31.2 25.9-24.8 22.2 17.3 36.2" data-name="Path 60" />
+						</g>
+					</svg>
+
+
+					<svg class="forecast-condition__icon" *ngSwitchCase="day5State === 'Sunny' || day5State === 'Clear'" viewBox="2050 -845 262 262">
+						<circle cx="131" cy="131" r="131" fill="#ffde17" data-name="Sun Icon" transform="translate(2050 -845)" />
+					</svg>
+
+					<span class="day-temp__text">{{day5Temp}}°</span>
+					<span class="day-state__text">{{day5State}}</span>
+				</div>
+
+			<div class="day-weather__container" [ngSwitch]="true">
+					<span class="day-name__text">{{day6Name}}</span>
+					<svg class="forecast-condition__icon" *ngSwitchCase="day6State === 'Clouds'" viewBox="2436.9 -843.1 275.5 274.1">
+						<g data-name="cloudy icon" transform="translate(84 790)">
+							<circle cx="137" cy="137" r="137" fill="#fff" data-name="Ellipse 23" transform="translate(2354 -1633)" />
+							<path fill="#ffde17" d="M2523.4-1361.5a37.2 37.2 0 0 0 8.4-23.4c0-22-19.8-40-44.1-40l-3.4.1h-.5a39.8 39.8 0 0 0-39.4-33.7 40.1 40.1 0 0 0-10 1.2 40 40 0 0 0-35.2-21.2 40.1 40.1 0 0 0-38.5 29 137.4 137.4 0 0 1-7.8-45.8 138.8 138.8 0 0 1 2.8-27.8 137 137 0 0 1 8-25.8 137.8 137.8 0 0 1 12.7-23.4 138.8 138.8 0 0 1 16.8-20.4 138.8 138.8 0 0 1 20.4-16.9 137.8 137.8 0 0 1 23.4-12.7 137 137 0 0 1 25.9-8 138.8 138.8 0 0 1 27.7-2.8 138.8 138.8 0 0 1 27.8 2.8 137 137 0 0 1 25.9 8 137.8 137.8 0 0 1 23.4 12.7 138.8 138.8 0 0 1 20.4 16.9 138.7 138.7 0 0 1 16.8 20.4 137.8 137.8 0 0 1 12.7 23.4 137 137 0 0 1 8 25.8 138.8 138.8 0 0 1 2.8 27.8 137.4 137.4 0 0 1-8 46.1 137.2 137.2 0 0 1-21.9 39.6 138.2 138.2 0 0 1-33.2 30.1 136.8 136.8 0 0 1-41.9 18z"
+							 data-name="Subtraction 1" />
+						</g>
+					</svg>
+
+					<svg class="forecast-condition__icon" *ngSwitchCase="day6State === 'Rain' || day6State === 'Drizzle'" viewBox="3170 -843.1 163.5 242.7">
+						<g data-name="Rain Icon">
+							<g data-name="Water Drops">
+								<path fill="#0032cc" d="M3295.4-824.5s85.8 133.5 0 133.5 0-133.5 0-133.5z" data-name="Path 7" />
+								<path fill="#003eff" d="M3239.4-843s-156.1 242.6 0 242.6 0-242.7 0-242.7z" data-name="Path 3" />
+							</g>
+						</g>
+					</svg>
+
+					<svg class="forecast-condition__icon" *ngSwitchCase="day6State === 'Storm'" viewBox="3487.9 -810.7 291.2 200.3">
+						<g data-name="Strom icon" transform="translate(1959 -1260.7)">
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 14" rx="55.3" ry="51.7" transform="translate(1529 490.4)" />
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 15" rx="55.3" ry="51.7" transform="translate(1569.6 467.8)"
+							/>
+							<circle cx="55.3" cy="55.3" r="55.3" class="cls-1" data-name="Ellipse 16" transform="translate(1618.9 476.8)" />
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 17" rx="55.3" ry="51.7" transform="translate(1631.8 450)" />
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 18" rx="55.3" ry="51.7" transform="translate(1687.1 477.5)"
+							/>
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 19" rx="55.3" ry="51.7" transform="translate(1709.6 507.3)"
+							/>
+							<circle cx="55.3" cy="55.3" r="55.3" class="cls-1" data-name="Ellipse 20" transform="translate(1639.6 500.1)" />
+							<ellipse cx="55.3" cy="51.7" class="cls-1" data-name="Ellipse 21" rx="55.3" ry="51.7" transform="translate(1569.6 507.3)"
+							/>
+							<path fill="none" stroke="#fd0" stroke-width="18" d="M1732.5 644l-61.4-61.4 22.5-10.3 26.8 5.1 9.5-22.4-38-37.2" data-name="Path 59"
+							/>
+							<path fill="none" stroke="#fd0" stroke-width="15" d="M1597.2 539.5l31.2 25.9-24.8 22.2 17.3 36.2" data-name="Path 60" />
+						</g>
+					</svg>
+
+
+					<svg class="forecast-condition__icon" *ngSwitchCase="day6State === 'Sunny' || day6State === 'Clear'" viewBox="2050 -845 262 262">
+						<circle cx="131" cy="131" r="131" fill="#ffde17" data-name="Sun Icon" transform="translate(2050 -845)" />
+					</svg>
+
+					<span class="day-temp__text">{{day6Temp}}°</span>
+					<span class="day-state__text">{{day6State}}</span>
+				</div>
+
+			</section>
+
+
+		</main>
+
+	</section>
+
+</div>
